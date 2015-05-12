@@ -1,0 +1,21 @@
+GaussMD is a utility code to extract geometric information, structures, and plots out of ab initio molecular dynamics simulation outputs of Gaussian0X. GaussMD uses a highly versatile input that allows users to flexibly define data types needed for extraction or calculation out of the supplied trajectory file.
+
+Please cite the following when using the code:
+
+Sahakyan A.B. “GaussMD Utility for Gaussian QM-MD Output Analysis.”, 2012+.
+https://github.com/aleksahak/GaussMD
+
+
+
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# License: You may redistribute this source code (or its components) and/or   #
+#   modify/translate it under the terms of the GNU General Public License     #
+#   as published by the Free Software Foundation; version 2 of the License    #
+#   (GPL2). You can find the details of GPL2 in the following link:           #
+#   https://www.gnu.org/licenses/gpl-2.0.html                                 #
+#                                                                             #
+# Aleksandr B. Sahakyan (C) 2012+ (aleksahak[at]cantab.net).                  #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+

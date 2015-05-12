@@ -1,0 +1,36 @@
+# This is a query file for the Gaussian MD trajectory analysis and graphing.
+# The first (non-comment) line in each (PLOT and DEFINE) category is the header of the corresponding table.
+#
+PLOT: Y              X       COLOR  TYPE   LINEWIDTH   Y.RANGE  X.RANGE  GROUP
+PLOT: r_CO_outer     Time     red    l         1.0       NA      NA      1
+PLOT: r_NH_outer     Time    blue    l         1.0       NA     0;20     1
+PLOT: r_NH_hbnd      Time    navy    l         1.0       NA      NA      1
+PLOT: r_CO_hbnd      Time  darkred   l         1.0       NA      NA      1
+PLOT: r_OH_hbnd      Time    cyan    l         1.0       NA      NA      1
+PLOT: angle_HOC_hbnd Time  magenta   l         1.0       NA      NA      1
+PLOT: dih_NHOC_hbnd  Time   violet   l         1.0       NA      NA      1
+PLOT: Etot           Time    blue    l         1.0       NA      NA      2
+PLOT: Ekin           Time  orange    l         1.0       NA      NA      2
+PLOT: Ekinc          Time     red    l         1.0       NA      NA      2
+PLOT: Epot           Time    navy    l         1.0       NA      NA      3
+# 
+# Etot, Ekin, Ekinc, Epot and Time do not require a definition.
+DEFINE: GEO.NAME       ATOM.IND ATOM.IND ATOM.IND ATOM.IND 
+DEFINE: r_CO_outer         2;1;8       3       NA       NA 
+DEFINE: r_NH_outer           15       18       NA       NA 
+DEFINE: r_NH_hbnd             4        9       NA       NA 
+DEFINE: r_CO_hbnd            14       13       NA       NA 
+DEFINE: r_OH_hbnd            13        9       NA       NA 
+DEFINE: angle_HOC_hbnd        9       13       14       NA 
+DEFINE: dih_NHOC_hbnd         4        9       13       14 
+#
+# The following part specifies which geometries should be extracted (time in fs) and in which format.
+# If the time definition starts with per, all the geometries per specified time-step will be extracted,
+# in addition to the other discrete states!
+# Only xyz is supported now. gjf and com formats will be added soon.
+DUMP: TIME FORMAT
+DUMP:  per;1 xyz
+DUMP:    5   xyz
+DUMP:   15   xyz 
+
+
