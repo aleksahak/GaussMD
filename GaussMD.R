@@ -8,8 +8,8 @@
 #   https://www.gnu.org/licenses/gpl-2.0.html                                  #
 ################################################################################
 
-md.query <- function(MDOUT="md_start.log", QUERY="traj.query",
-                     WIDTH=10, HEIGHT=4, RELATIVE.E=TRUE, CSV=NULL){
+GaussMD <- function(MDOUT="md_start.log", QUERY="traj.query",
+                    WIDTH=10, HEIGHT=4, RELATIVE.E=TRUE, CSV=NULL){
 
 # WRITE.QUERY.EXAMPLE = FALSE
 
